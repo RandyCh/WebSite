@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>網頁title 瀏覽器分頁顯示文字</title>
+    <meta name="author" content="Randy" />
+    <meta name="keywords" content="關鍵字,html" />
+    <meta name="description" content="網頁的簡短描述" />
+    <meta http-equiv="refresh" content="300" />
+    <meta http-equiv="refresh" content="50; URL=HtmlPage2.html"/>
+    <style>
+        /*CSS描述*/
+    </style>
+    <script>
+    //Javascript描述
+    </script>
+</head>
+<body>
+    <h1 style="background-color:aqua">h1</h1>
+    aaa<h2 style="background-image:url()">h2</h2>bbbb
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <h7>這是無效的標籤</h7>aaa
+    aaa<p> paragraph 段落標籤</p>bbb
+    <p>某些設定可能包含您個人或電腦的相關資訊。旁邊會顯示警告圖示。</p>
+    <!--h1~h6,p都是區塊元素-->
+    div沒有空一行<div style="background-color:cadetblue">
+        this is a div
+        <span style="background-color:orange">this is a span</span>
+        <h3>h3</h3>
+    <!--br強制換行-->
+        <p>某些設定可能包含您個人或電腦的相關資訊。<br />例如，如果您已自訂 Visual Studio 將專案儲存至網路上的某個共用資料夾，則您的設定檔就會包含該資料夾的路徑。 如果您將這個檔案匯出並與其他人共用，則任何將您的設定匯入的人也可以指向這個網路共用。 可能有風險的設定 (例如 [外部工具清單] 和 [命令視窗別名]) 旁邊會顯示警告圖示。</p>
+    </div>div沒有空一行
+    <!--block元素中可以放block或inline元素 皆有效-->
+    <!--inline元素中可以放inline元素有效,但放block元素則會無效果-->
+    <hr />
+    <!--hr是分隔線-->
+    span沒有換行<span style="background-color:yellow">
+        this is a span
+        <span >this is a span</span>
+        <h3>h3</h3>
+        <p>某些設定可能包含您個人或電腦的相關資訊。 例如，如果您已自訂 Visual Studio 將專案儲存至網路上的某個共用資料夾，則您的設定檔就會包含該資料夾的路徑。 如果您將這個檔案匯出並與其他人共用，則任何將您的設定匯入的人也可以指向這個網路共用。 可能有風險的設定 (例如 [外部工具清單] 和 [命令視窗別名]) 旁邊會顯示警告圖示。</p>
+    </span>bbb
+</body>
+</html>
