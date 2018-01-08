@@ -1,0 +1,21 @@
+﻿body {
+}
+/*h2 {
+    color: blue;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: green;
+    text-decoration: overline;
+}*/
+.st1 {
+    color: blue;
+    text-transform: uppercase;
+    font-size:20px
+}
+
+h3.st2 {
+    color: green;
+    text-decoration: overline;
+}

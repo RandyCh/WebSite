@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Style/st1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <style>
+        /*自訂樣式 select{屬性:屬性值}*/
+        /*重新設定顏色屬性*/
+        h3 {
+            color: black
+        }
+        /* id物件選擇器    #id名稱{樣式1;樣式2}*/
+        #theH1 {
+            color: lightcoral;
+        }
+
+        @font-face {
+            font-family: Font1;
+            src: url(fonts/JustOldFashion.ttf);
+        }
+
+        h1 {
+            font-family: Font1
+        }
+
+        @font-face {
+            font-family: Font2;
+            src: url(fonts/SCRIPALT.ttf);
+        }
+
+        .st3 {
+            font-family: Font2;
+        }
+        h4 
+        {
+            font-family: 'Joti One', cursive;
+        }
+        /*font-family: 'Joti One', cursive;   後面的cursive是避免連線失敗 取預設字型*/
+        
+    </style>
+</head>
+
+<body>
+    <h4>this is Joti One font</h4>
+    <hr/>
+    <h1>font1字型</h1>
+    <h2 class="st1">h2</h2>
+    <h2 class="st1 st3">h2</h2>
+    <hr />
+    <h2 id="theH1">使用id物件選擇</h2>
+    <!--<h3 id="theH1">使用id物件選擇2</h3>-->
+    <!--id物件只能套用一次,因為javascript只能作用一個標籤-->
+    <hr />
+    <!--使用類別選擇-->
+    <h2 class="st1">h2</h2>
+    <h3 class="st1">h3</h3>
+    <h2 class="st2">h2因為只讓特定的標籤使用所以這個標籤無法套用</h2>
+    <h3 class="st2">h3</h3>
+    <hr />
+    <h1 style="font-family:標楷體">標楷體</h1>
+    <h1 style="font-family:DengXian">FACAT</h1>
+    <span>廢貓</span>
+    <span style="color: gray;font-size:2.5em">廢貓</span>
+    <span style="color:#00ff00;font-size:150%">廢貓</span>
+    <span style="color:rgb(0,128,128);font-size:19px">廢貓</span>
+    <span style="color:rgb(0,128,128);font-size:19pt">廢貓</span>
+    aaa<div style="border:3px solid red; width:30px;height:50px">這邊</div>bbb
+    aaa<div style="border-width:3px;border-style:double;border-color:blue; width:30px;height:50px;background-color:yellow">這邊是內容</div>bbb
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <script>
+        theH1.style.color = "blue";
+    </script>
+</body>
+</html>
