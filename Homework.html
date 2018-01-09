@@ -3,17 +3,88 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <style>
-        *{margin:0;
-          padding:0;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        .maindiv{border:3px solid red}
 
+        .maindiv {
+            border: 3px solid blue;
+            width: 1000px;
+            position: absolute;
+            left: 50%;
+            margin-left: -500px;
+            margin-top: 20px;
+            /*background-color:lightgrey;*/
+            background-image: url(/images/fjyN9YK.jpg);
+            background-repeat: repeat;
+        }
+
+        .fig1 {
+            border: 3px solid red;
+            padding: 3px;
+            width: 400px;
+            float: left;
+            margin: 10px;
+            text-align: center;
+            font-style: italic;
+            font-size: smaller;
+        }
+
+        .img1 {
+            width: 100%;
+        }
+
+        p {
+            margin: 20px;
+            font-family: 'Joti One', cursive;
+        }
+
+        h2 {
+            margin: 20px;
+            font-family: 'Sedgwick Ave Display', cursive;
+        }
+        body{
+            background-color:lightsteelblue;
+        }
     </style>
 </head>
 <body>
     <div class="maindiv">
-
+        <figure class="fig1">
+            <a href="http://studyhost.blogspot.tw/2017/01/the-devops-journey-0.html"><img class="img1" src="images/star.png" alt="星際迷航圖片無法顯示" tile="startrack" width="400" /></a>
+            <figcaption>星際迷航</figcaption>
+        </figure>
+        <br />
+        <h2>The DevOps Journey – Index</h2>
+        <p>
+            這年頭大多數人已經沒有耐心，已經很難看完一整篇長篇大論，因為這樣，這幾年我們寫blog的時候，幾乎都零零碎碎，這使得許多學員面對知識的掌握，也變得片片斷斷。
+            <br />
+            <br />如果可以，我希望能夠把我們這幾年面對軟體開發方法，以及ALM/DevOps的一些經驗，有條理一點的整理出來，如果你有興趣，不妨嘗試慢慢的看看，如果實在已經不習慣看長篇文章，也可以挑有興趣的重點來讀。
+            <br />
+            <br /><span style="font-size:30px; color:orangered"> 開始一段新的旅程</span>
+            <br />
+            <br />這一系列的標題中有個字眼『journey』，第一次看到這個字…是在一場研討會，我忘了是TechEd還是Build，印象中研討會的主題是Metro Style App(現在應該不多人還記得這個名字了吧?)，主講人用journey這個字眼來描述學習一種技術的過程，我覺得真TxD的太貼切了…
+            <br />
+            <br />不知道你有沒有發現，最近五年，軟體開發的潮流根本就是一場journey，而且非常像是我最愛的影集Star Trek Voyager中的旅程。你該怎麼形容這段旅程呢? 圖乎其來? 充滿意外? 不僅如此，大夥摸著石頭過河…似乎根本沒人能告訴你往哪個方向才是對的，你也不知道怎麼走才會到終點…這差不多就是這部影集當中的旅程。
+            <br />
+            <br />若用來描述最近五年軟體開發技術的發展，根本是整個貼切到不行，而且從Web、前端、行動裝置、開發方法、框架…幾乎都逃不過這場journey魔咒，所有的技術都是在途(on the road)，一點都沒有發展成熟的跡象…
+            <br />
+            <br />當然，如果旅程總是只為了看到終點倒也世俗了些，旅程的過程中還是有很多意外的小驚喜，以及足以令人回味的點滴，不管是你早已遺忘的Metro Style Application，或是充斥各種消耗型框架的所謂前端開發技術，又或者是我們要討論的這個主題 – ALM/DevOps。
+            <br />
+            <br />關於開發方法的重要性
+            <br />
+            <br />身為一個以寫程式起家的開發人員，就一個軟體開發人員的生命週期來看，我算是到了很老的時候，才願意承認軟體專案/產品的開發過程中，最重要的可能不是開發技術，而是開發方法。
+            <br />
+            <br />技術能力的強度，是進入軟體(專案/產品)開發領域的入場券，它就是一塊敲門磚，技術能力的強度，決定了你敲門的力道。然而一但當門打開，你開始了一個專案，進入了一個團隊，參與了一個產品的研發，技術能力對成果的影響力，可能就開始慢慢式微了。請注意，個人技術能力可能會影響開發團隊產出的品質和數量，然而開發團隊產出的品質和數量卻很可能跟軟體專案的『成果』沒有絕對的正相關。
+            <br />
+            <br />什麼意思? 我們看過太多技術能力很強的個人或團隊，但經手的專案或產品開發依舊是失敗的很徹底的。例子很多，不好一個一個舉。你可以盡其所能地回憶你自己參與過的專案，你應該會發現，團隊的技術能力決定了你能不能做某個案子(或產品)，但開發方法和團隊的素養，則決定了案子做得好不好，能不能順利結案。
+            <br />
+            <br />由於軟體開發與一般工程營造迥異的特性，使得軟體開發這件事情，並不單單的工程行為，也是創作行為…這導致，追求技術的極致，其實對軟體專案沒有絕對的幫助，技術能力一旦到了某一個點之後，對於整體專案的幫助就迅速下滑…
+        </p>
     </div>
 
 </body>
