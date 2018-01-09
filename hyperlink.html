@@ -3,8 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        /*與超連結有關的選擇器 page41*/
+        .menu a:link {
+            text-decoration: none
+        }
+        .menu a:visited {
+            color: red
+        }
+        .menu a:hover {
+            text-decoration: underline
+        }
+        .menu a:active {
+            font-size: 30px
+        }
+
+    </style>
+    
 </head>
 <body>
+    <ul class="menu">
+        <li><a href="http://www.pchome.com.tw">pchome</a></li>
+        <li><a href="HtmlPage1.html">page1</a></li>
+        <li><a href="HtmlPage2.html">page2</a></li>
+        <li><a href="Hyperlink.html">Hyperlink</a></li>
+        <li><a href="CSS.html">css</a></li>
+    </ul>
+    <hr/>
     <a href="http://www.pchome.com.tw">Pchome</a>
     <a href="HtmlPage2.html">page2</a>
     <a href="art/b.html">b.html</a>
@@ -18,7 +43,7 @@
         <figcaption>都是有夠廢</figcaption>
         <figcaption>還是會顯示 但是第二次是多餘的 都是有夠廢</figcaption>
     </figure>
-    
+
     <hr />
     span沒有換行<span style="background-color:yellow">
         this is a span

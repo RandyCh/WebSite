@@ -3,19 +3,42 @@
 <head>
     <meta charset="utf-8" />
     <title>清單元素</title>
+    <style>
+        /*修改清單樣式屬性 page42*/
+        .list{
+            list-style-type:lower-roman
+        }
+        .list1 {
+            list-style-type: none;
+            list-style-image:url(images/GitHub-Mark-20px.png)
+        }
+        .list2 {
+            list-style-type: none;
+            list-style-image: url(images/linkedin-icon.png)
+        }
+        .in{
+            list-style-position:inside;
+            background-color:#ffffff;
+               
+        }
+        .out {
+            list-style-position: outside;
+            background-color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <h1>清單元素 ul li</h1>
     清單項目 ul標籤
     單一清單項目 li標籤
-    <ul style="background-color:yellow">
+    <ul class="list" style="background-color:yellow">
         <li style="background-color:orange">就業養成 
-        <ul style="background-color:deepskyblue">
+        <ul class="list1" style="background-color:deepskyblue">
             <li>全方位
-                <ol type="a">
-                    <li>li1 中間再包ol 就會產生序號清單</li>
+                <ol class="list2"  type="a">
+                    <li class="in">il1 中間再包ol 就會產生序號清單</li>
                     <li>il2 type可以選擇用什麼方式產生序號 1,a,A,i,I</li>
-                    <li>il2 CSS取但TYPE</li>
+                    <li class="out">il2 CSS取但TYPE</li>
                     <li></li>
                 </ol>
             </li>

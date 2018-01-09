@@ -1,0 +1,11 @@
+﻿body {
+}
+h1,h2,h3 {
+    color: red;
+}
+h1.purple {
+    color: purple;
+}
+h3.purple {
+    color: purple;
+}
