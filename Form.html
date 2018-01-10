@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .st1{border-bottom:1px dashed rgba(234, 233, 233, 0.66);
+             margin:10px;
+             padding:5px;
+             width:400px;
+
+        }
+        .st2 {
+            margin: 10px;
+            width: 450px;
+            text-align: center;
+            border-bottom: 1px dashed rgba(234, 233, 233, 0.66)
+        }
+        .t1{width:50px;
+            /*border:1px solid red;*/
+            float:left;
+            text-align:right;
+            padding-right:3px;
+            /*margin:3px;*/
+        }
+        fieldset {
+            border: 1px solid #ACD6FF;
+            border-radius: 25px 30px 35px 40px;
+            width: 500px;
+            margin:3px;
+        }
+        em{color:red}
+        .lb3{
+            padding-bottom:10px;
+            padding-top:3px;
+            vertical-align:top;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <!--method="post" post為htp封包-->
+        <fieldset>
+            <legend>個人資料一<em>(必填)</em></legend>
+            <div class="st1">
+                <!--<label for="" 游標定位會跳到 id=名稱相同的位置-->
+                <label for="account1" class="t1">姓名:</label><input id="account1" type="text" name="account" value="guest" />
+            </div>
+            <div class="st1">
+                <input type="radio" name="gender" value="male" id="m1" /><label class="lb3" for="m1">男</label>
+                <input type="radio" name="gender" value="female" id="f1" /><label class="lb3" for="f1">女</label>
+            </div>
+            <div class="st1">
+                <label for="password1" class="t1">密碼:</label><input id="password1" name="pwd" maxlength="8" size="20" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>地址<em>(必填)</em></legend>
+            <div class="st1">
+                <label for="" class="t1">縣市:</label>
+                <select name="livingin" multiple>
+                    <option value="TPE">台北市</option>
+                    <option value="TPH">新北市</option>
+                    <option value="TYC">桃園市</option>
+                    <option value="HSC" selected>新竹市</option>
+                </select>
+            </div>
+            <div class="st1">
+                <label for="Address" style="width:60px">完整地址:</label><input id="Address" type="text" name="address" size="40"/>
+            </div>
+        </fieldset>
+            <fieldset>
+                <legend>個人資料二</legend>
+                <div class="st1">
+                    <input type="checkbox" name="hobby" value="music" id="music1" /><label class="lb3" for="music1">音樂</label>
+                    <input type="checkbox" name="hobby" value="sport" id="sport" /><label class="lb3" for="sport">運動</label>
+                    <input type="checkbox" name="hobby" value="reading" id="reading" /><label class="lb3" for="reading">閱讀</label>
+                </div>
+                <div class="st1">
+                    <label for="memo1" class="t1">意見:</label><textarea id="memo1" cols="40" rows="5" name="memo"></textarea>
+                </div>
+                <div class="st2">
+                    <input type="submit" value="送出" /><input type="reset" value="清除" /> <!--value為按鈕上的文字-->
+                </div>
+            </fieldset>
+    </form>
+
+</body>
+</html>
