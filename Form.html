@@ -40,27 +40,47 @@
     </style>
 </head>
 <body>
-    <form action="#" method="get">
+    <form action="#" method="get" enctype="multipart/form-data">
         <!--method="post" post為htp封包-->
         <fieldset>
             <legend>個人資料一<em>(必填)</em></legend>
             <div class="st1">
                 <!--<label for="" 游標定位會跳到 id=名稱相同的位置-->
-                <label for="account1" class="t1">姓名:</label><input id="account1" type="text" name="account" value="guest" />
+                <label for="account1" class="t1">姓名:</label><input id="account1" type="text" name="account" value="guest" autofocus />
+            </div>
+            <div class="st1">
+                <!--<label for="" 游標定位會跳到 id=名稱相同的位置-->
+                <label for="account1" class="t1">姓名:</label><input id="account1" type="text" name="account" placeholder="guest" />
+            </div>
+            <div class="st1">
+                <!--<label for="" 游標定位會跳到 id=名稱相同的位置-->
+                <label for="account1" class="t1">姓名:</label><input id="account1" type="text" name="account" value="guest" autocomplete="off" />
+            </div>
+            <div class="st1">
+                <label for="password1" class="t1">密碼:</label><input id="password1" name="pwd" maxlength="8" size="20" />
             </div>
             <div class="st1">
                 <input type="radio" name="gender" value="male" id="m1" /><label class="lb3" for="m1">男</label>
                 <input type="radio" name="gender" value="female" id="f1" /><label class="lb3" for="f1">女</label>
             </div>
             <div class="st1">
-                <label for="password1" class="t1">密碼:</label><input id="password1" name="pwd" maxlength="8" size="20" />
+                <label for="birth" class="t1">生日:</label><input type="date" id="birth" name="date" /><!--page77 還有datetime-local month time week-->
+            </div>
+            <div class="st1">
+                <label for="email" class="t1">E-mail:</label><input type="email" id="email" name="email" multiple />
+            </div>
+            <div class="st1">
+                <label for="email" class="t1">E-mail:</label><input type="email" id="email" name="email" multiple placeholder="可輸入多筆email 要用逗號分開" />
+            </div>
+            <div class="st1">
+                <label for="idcode" class="t1">身分證字號:</label><input type="text" maxlength="10" required="required" pattern="[a-zA-Z]{1}[1-2]{1}\d{8}" id="idcode"/>
             </div>
         </fieldset>
         <fieldset>
             <legend>地址<em>(必填)</em></legend>
             <div class="st1">
-                <label for="" class="t1">縣市:</label>
-                <select name="livingin" multiple>
+                <label for="livingin" class="t1">縣市:</label>
+                <select name="livingin" id="livingin" multiple>
                     <option value="TPE">台北市</option>
                     <option value="TPH">新北市</option>
                     <option value="TYC">桃園市</option>
@@ -68,24 +88,57 @@
                 </select>
             </div>
             <div class="st1">
-                <label for="Address" style="width:60px">完整地址:</label><input id="Address" type="text" name="address" size="40"/>
+                <label for="Address" class="t1" style="width:auto">完整地址:</label><input id="Address" type="text" name="address" size="40" />
             </div>
         </fieldset>
-            <fieldset>
-                <legend>個人資料二</legend>
-                <div class="st1">
-                    <input type="checkbox" name="hobby" value="music" id="music1" /><label class="lb3" for="music1">音樂</label>
-                    <input type="checkbox" name="hobby" value="sport" id="sport" /><label class="lb3" for="sport">運動</label>
-                    <input type="checkbox" name="hobby" value="reading" id="reading" /><label class="lb3" for="reading">閱讀</label>
-                </div>
-                <div class="st1">
-                    <label for="memo1" class="t1">意見:</label><textarea id="memo1" cols="40" rows="5" name="memo"></textarea>
-                </div>
-                <div class="st2">
-                    <input type="submit" value="送出" /><input type="reset" value="清除" /> <!--value為按鈕上的文字-->
-                </div>
-            </fieldset>
+        <fieldset>
+            <legend>個人資料二</legend>
+            <div class="st1">
+                <input type="checkbox" name="hobby" value="music" id="music1" /><label class="lb3" for="music1">音樂</label>
+                <input type="checkbox" name="hobby" value="sport" id="sport" /><label class="lb3" for="sport">運動</label>
+                <input type="checkbox" name="hobby" value="reading" id="reading" /><label class="lb3" for="reading">閱讀</label>
+            </div>
+            <div class="st1">
+                <label class="t1">Blog:</label>
+                <input type="url" name="blog" list="blog" />
+                <datalist id="blog">
+                    <option value="http://www.google.com.tw"></option>
+                    <option value="http://www.facebook.com.tw"></option>
+                    <option value="www.facebook2.com.tw"></option>
+                </datalist>
+            </div>
+            <div class="st1">
+                <label class="t1">照片:</label><input type="file" name="file1" multiple />
+            </div>
+            <div class="st1">
+                <label for="memo1" class="t1">意見:</label><textarea id="memo1" cols="40" rows="5" name="memo"></textarea>
+            </div>
+            <div class="st2">
+                <input type="submit" value="送出" /><input type="reset" value="清除" /> <!--value為按鈕上的文字-->
+            </div>
+        </fieldset>
     </form>
-
+    <hr />
+    <form>
+        <div class="st1">
+            <label for="search" class="t1">搜尋:</label><input type="search" id="search" name="search" />
+        </div>
+        <div class="st1">
+            <label for="url" class="t1">網址:</label><input type="url" id="url" name="url" value="http://" />
+        </div>
+        <div class="st1">
+            <label for="color" class="t1">顏色:</label><input type="color" id="color" name="color" />
+        </div>
+        <div>
+            Number:<input type="number" id="numberInput" min="-60" max="60" step="2" />
+        </div>
+        <div>
+            Range:<input type="range" id="rangeInput" min="-40" max="40" step="2" />
+        </div>
+        <div>
+            Range:<input type="datetime" />
+        </div>
+            <input type="submit" />
+    </form>
 </body>
 </html>
