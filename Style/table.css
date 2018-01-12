@@ -1,0 +1,40 @@
+﻿body {
+}
+#table1 {
+    border: 2px solid blue;
+    border-collapse: collapse;
+    width: 300px;
+    margin:16px auto;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+thead {
+    text-transform: uppercase;
+    background-color: cornflowerblue;
+    color: snow;
+    border-bottom: 1px double yellow;
+}
+
+tbody {
+    background-color: #f5f6f7;
+}
+
+    tbody tr:nth-child(2n) {
+        background-color: #52e5f3
+    }
+    /*偶數列*/
+    tbody tr:nth-child(2n+1) {
+        background-color: cornflowerblue
+    }
+    /*基數列*/
+    tbody tr:hover {
+        background-color: aliceblue
+    }
+    /*滑鼠移到的列*/
+    tbody tr:active {
+        background-color: red
+    }
+/*滑鼠點下去*/

@@ -1,0 +1,3 @@
+先到http://www.favicon.cc/
+產生icon
+再放到根目錄

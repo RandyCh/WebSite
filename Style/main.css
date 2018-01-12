@@ -1,0 +1,97 @@
+﻿body {
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#allpage {
+    width: 1024px;
+    margin: auto;
+}
+
+.main {
+    width: 100%;
+    background-color: aquamarine;
+    overflow: auto;
+    list-style-type: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 3px solid red;
+}
+
+    .main li {
+        float: left;
+        width: 7em; /*用em表示會隨著文字大小變化*/
+        border-right: 1px solid white;
+    }
+
+        .main li a {
+            display: block;
+            text-align: center;
+            /*font-size:20px;*/
+            line-height: 2em;
+            color: slategrey;
+            text-decoration: none;
+        }
+
+            .main li a:hover {
+                background-color: aqua;
+                color: white;
+            }
+
+.title {
+    background-color: coral;
+    color: white;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+.logo1 {
+    display: block; /*這行把原本image的inline屬性變成block 削掉logo和第一個title間的空隙*/
+}
+
+.list {
+    list-style: decimal inside;
+}
+
+article section {
+    margin: 16px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+}
+
+    article section p {
+        margin: 10px 0; /*margin 上下 左右*/
+    }
+
+aside section dl {
+    margin: 10px 0;
+}
+
+.content {
+    width: 100%;
+    border: 1px solid black;
+    overflow: auto;
+    設定容器元件顯示方式 自動設定 當需要時出現卷軸
+}
+
+article {
+    width: 75%;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    background-color: aquamarine;
+    line-height: 2.5em;
+    color: slategrey;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
